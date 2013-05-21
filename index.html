@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Max Reps Calculator</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    
+    <link rel="apple-touch-startup-image" href="/splash-iphone.jpg" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset id="weight">
+        <input type="tel" data-bind="value: weight" />
+        <label>lbs/kg</label>
+      </fieldset>
+      <fieldset id="reps">
+        <input type="tel" data-bind="value: reps" />
+        <label>reps</label>
+      </fieldset>
+    </form>
+    
+    <div id="maxes" data-bind="foreach: maxes">
+      <!-- ko if: $index() == 0 -->
+        <div class="rm">&nbsp;</div>
+      <!-- /ko -->
+      <div class="rm">
+        <span class="weight" data-bind="text: $data"></span>
+        <label class="reps"><span data-bind="text: $index() + 1"></span> RM</label>
+      </div>
+      <!-- ko if: $index() == 0 -->
+        <div class="rm">&nbsp;</div>
+      <!-- /ko -->
+    </div>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

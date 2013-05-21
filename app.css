@@ -1,0 +1,73 @@
+@import '//fonts.googleapis.com/css?family=Dosis';
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font: normal 100%/1.5 Dosis, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+fieldset label {
+  display: block;
+  float: right;
+  width: 49%;
+  font-size: 150%;
+  line-height: 3.3;
+  color: #fff;
+}
+fieldset input {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 49%;
+  font: inherit;
+  font-size: 250%;
+  line-height: 2;
+  text-align: right;
+  color: #fff;
+  background: transparent;
+  border: none;
+}
+fieldset input:focus {
+  outline: 0;
+  border: none;
+}
+  #weight {
+    background: #f27934;
+  }
+  #reps {
+    background: #00afd1;
+  }
+.rm {
+  float: left;
+  padding: 10px 0;
+  width: 33%;
+  height: 70px;
+  text-align: center;
+}
+  .rm .weight,
+  .rm .reps {
+    display: block;
+  }
+  .rm .weight {
+    font-size: 200%;
+    line-height: 1;
+  }
+
+@media only screen 
+and (max-width : 320px) {
+  fieldset label {
+    width: 20%;
+  }
+  fieldset input {
+    width: 79%;
+  }
+}
