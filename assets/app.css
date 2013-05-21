@@ -41,10 +41,12 @@ fieldset input:focus {
   border: none;
 }
   #weight {
-    background: #f27934;
+    background: #f27934 url(weight.png) no-repeat 10px 50%;
+    background-size: 50px;
   }
   #reps {
-    background: #00afd1;
+    background: #00afd1 url(reps.png) no-repeat 6px 50%;
+    background-size: 60px;
   }
 .rm {
   float: left;
