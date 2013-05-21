@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Max Reps Calculator</title>
+    <title>RM Calc</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -13,11 +13,11 @@
   <body>
     <form>
       <fieldset id="weight">
-        <input type="tel" data-bind="value: weight" />
+        <input type="tel" onfocus="this.value = '';" data-bind="value: weight" />
         <label>lbs/kg</label>
       </fieldset>
       <fieldset id="reps">
-        <input type="tel" data-bind="value: reps" />
+        <input type="tel" onfocus="this.value = '';" data-bind="value: reps" />
         <label>reps</label>
       </fieldset>
     </form>
@@ -35,7 +35,7 @@
       <!-- /ko -->
     </div>
 
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
