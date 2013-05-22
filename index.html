@@ -23,17 +23,15 @@
     </form>
     
     <div id="maxes" data-bind="foreach: maxes">
-      <!-- ko if: $index() == 0 -->
-        <div class="rm">&nbsp;</div>
-      <!-- /ko -->
       <div class="rm">
         <span class="weight" data-bind="text: $data"></span>
         <label class="reps"><span data-bind="text: $index() + 1"></span> RM</label>
       </div>
-      <!-- ko if: $index() == 0 -->
-        <div class="rm">&nbsp;</div>
-      <!-- /ko -->
     </div>
+
+    <footer>
+      <p>A <a href="http://blainsmith.com">Blain Smith</a> Project. Source code on <a href="https://github.com/blainsmith/max-reps-calculator">GitHub</a>.
+    </footer>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
