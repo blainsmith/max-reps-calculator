@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font: normal 100%/1.5 Dosis, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fff;
 }
 a, a:visited, a:hover {
   color: #00afd1;
@@ -23,7 +24,7 @@ fieldset label {
   float: right;
   width: 49%;
   font-size: 150%;
-  line-height: 3.3;
+  line-height: 3;
   color: #fff;
 }
 fieldset input {
@@ -32,8 +33,8 @@ fieldset input {
   padding: 0;
   width: 49%;
   font: inherit;
-  font-size: 250%;
-  line-height: 2;
+  font-size: 225%;
+  line-height: 1.8;
   text-align: right;
   color: #fff;
   background: transparent;
@@ -51,9 +52,12 @@ fieldset input:focus {
     background: #00afd1 url(reps.png) no-repeat 6px 50%;
     background-size: 60px;
   }
+#maxes {
+  padding: 15px 0;
+}
 .rm {
   float: left;
-  padding: 10px 0;
+  padding-bottom: 10px;
   width: 33%;
   text-align: center;
 }
@@ -65,12 +69,11 @@ fieldset input:focus {
     display: block;
   }
   .rm .weight {
-    font-size: 200%;
+    font-size: 175%;
     line-height: 1;
   }
 footer {
   clear: both;
-  padding-top: 30px;
   text-align: center;
 }
 
@@ -141,6 +144,13 @@ and (orientation : portrait) {
 and (min-width : 1224px) {
   body {
     font-size: 150%;
+    background: #333;
+  }
+  #app {
+    margin: 0 auto;
+    width: 640px;
+    height: 100%;
+    background-color: #fff;
   }
 }
 
