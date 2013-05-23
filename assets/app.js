@@ -11,6 +11,7 @@ function AppViewModel(){
   self.computeMaxes = ko.computed(function(){
     if(isNaN(self.weight()) || self.weight() == '') { self.weight(self.defaultWeight); }
     if(isNaN(self.reps()) || self.reps() == '') { self.reps(self.defaultReps); }
+    if(self.reps() > 10) { self.reps(10); }
 
     var single = Math.round(self.weight() / self.coeffs[self.reps() - 1]);
 
