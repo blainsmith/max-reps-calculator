@@ -27,11 +27,53 @@
           <label>reps</label>
         </fieldset>
       </form>
+
+      <nav>
+        <a data-view="average" class="active">Average</a>
+        <a data-view="lombardi">Lombardi</a>
+        <a data-view="bryzcki">Bryzcki</a>
+        <a data-view="epley">Epley</a>
+      </nav>
       
-      <div id="maxes" data-bind="foreach: maxes">
-        <div class="rm">
-          <span class="weight" data-bind="text: $data"></span>
-          <label class="reps"><span data-bind="text: $index() + 1"></span> RM</label>
+      <div id="maxes">
+        <div class="maxes average">
+          <h3>Average Maxes</h3>
+          <div data-bind="foreach: maxes.average">
+            <div class="rm">
+              <span class="weight" data-bind="text: $data"></span>
+              <label class="reps"><span data-bind="text: $index() + 1"></span> RM</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="maxes lombardi">
+          <h3>Lombardi Maxes</h3>
+          <div data-bind="foreach: maxes.lombardi">
+            <div class="rm">
+              <span class="weight" data-bind="text: $data"></span>
+              <label class="reps"><span data-bind="text: $index() + 1"></span> RM</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="maxes bryzcki">
+          <h3>Bryzcki Maxes</h3>
+          <div data-bind="foreach: maxes.bryzcki">
+            <div class="rm">
+              <span class="weight" data-bind="text: $data"></span>
+              <label class="reps"><span data-bind="text: $index() + 1"></span> RM</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="maxes epley">
+          <h3>Epley Maxes</h3>
+          <div data-bind="foreach: maxes.epley">
+            <div class="rm">
+              <span class="weight" data-bind="text: $data"></span>
+              <label class="reps"><span data-bind="text: $index() + 1"></span> RM</label>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -41,6 +83,7 @@
     </div>
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
   </body>
 </html>

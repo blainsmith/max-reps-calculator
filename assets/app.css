@@ -9,10 +9,11 @@ body {
   margin: 0 auto;
   padding: 0;
   font: normal 100%/1.5 Dosis, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
   background-color: #fff;
 }
 a, a:visited, a:hover {
-  color: #00afd1;
+  color: #333;
 }
 fieldset {
   margin: 0;
@@ -23,7 +24,7 @@ fieldset label {
   display: block;
   float: right;
   width: 49%;
-  font-size: 150%;
+  font-size: 120%;
   line-height: 3;
   color: #fff;
 }
@@ -33,7 +34,7 @@ fieldset input {
   padding: 0;
   width: 49%;
   font: inherit;
-  font-size: 225%;
+  font-size: 200%;
   line-height: 1.8;
   text-align: right;
   color: #fff;
@@ -45,16 +46,43 @@ fieldset input:focus {
   border: none;
 }
   #weight {
-    background: #f27934 url(weight.png) no-repeat 10px 50%;
-    background-size: 50px;
+    background: #333 url(weight.png) no-repeat 10px 50%;
+    background-size: 40px;
   }
   #reps {
-    background: #00afd1 url(reps.png) no-repeat 6px 50%;
-    background-size: 60px;
+    background: #ed702b url(reps.png) no-repeat 6px 50%;
+    background-size: 50px;
+  }
+nav a {
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  width: 25%;
+  text-align: center;
+  color: #333;
+  background-color: #eee;
+  border-bottom: 5px solid #ddd;
+}
+  nav a.active {
+    border-bottom: 5px solid #333;  
   }
 #maxes {
   padding: 15px 0;
 }
+  .maxes {
+    display: none;
+  }
+  .maxes:first-child {
+    display: block;
+  }
+    .maxes h3 {
+      display: none;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      text-align: center;
+    }
 .rm {
   float: left;
   padding-bottom: 10px;
@@ -144,7 +172,7 @@ and (orientation : portrait) {
 and (min-width : 1224px) {
   body {
     font-size: 150%;
-    background: #333;
+    background: #000;
   }
   #app {
     margin: 0 auto;
