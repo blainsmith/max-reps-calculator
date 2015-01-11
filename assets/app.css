@@ -125,12 +125,8 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-device-width : 321px) {
-  body {
-    font-size: 60%;
-  }
   #maxes {
-    margin: 0 auto;
-    width: 480px;
+    margin: 0 auto;]
   }
 }
 
