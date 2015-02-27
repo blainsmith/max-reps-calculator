@@ -1,0 +1,25 @@
+{
+  "name": "max-reps-calculator",
+  "version": "1.0.0",
+  "description": "Knockout.js app for calculating max reps.",
+  "scripts": {
+    "setup": "dploy install",
+    "start": "ssss 3000",
+    "deploy": "dploy live",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blainsmith/max-reps-calculator.git"
+  },
+  "author": "Blain Smith <rebelgeek@blainsmith.com> (http://blainsmith.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blainsmith/max-reps-calculator/issues"
+  },
+  "homepage": "https://rblgk.io/max-reps-calculator",
+  "devDependencies": {
+    "dploy": "^1.2.0",
+    "ssss": "^0.1.2"
+  }
+}
